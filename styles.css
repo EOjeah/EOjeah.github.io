@@ -28,20 +28,23 @@ body {
   margin-left: 1rem;
 }
 
-.main-nav ul {
+.main-nav ul,
+.footer-nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav a {
+.main-nav a,
+.footer-nav a {
   color: inherit;
   text-decoration: none;
   padding: 1rem;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.footer-nav a:hover {
   color: #adadad;
 }
 
@@ -49,13 +52,32 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+  flex-grow: 1;
 }
 
-.main-header {
+.main-header,
+.main-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 140px;
+}
+
+.main-footer {
+  height: 70px;
+  background-color: #202027;
+  font-weight: bold;
+}
+
+.social-link img {
+  width: 1em;
+  margin-right: 0.25rem;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .full-height-grow {
@@ -83,4 +105,15 @@ body {
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2180d8;
+}
+
+.btn:focus {
+  background-color: #2796ff;
 }
